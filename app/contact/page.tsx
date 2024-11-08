@@ -40,11 +40,11 @@ const Contact: FC = () => {
       formData,
       '8S08VEHv-I8qMCReN'
     ).then(
-      (response) => {
+      () => {
         setFormStatus({ message: 'Message sent successfully!', type: 'success' });
         setFormData({ name: '', email: '', message: '' });
       },
-      (error) => {
+      () => {
         setFormStatus({ message: 'Failed to send message. Please try again later.', type: 'error' });
       }
     );
@@ -62,7 +62,7 @@ const Contact: FC = () => {
       <section className="py-12 px-4 md:px-8">
         <div className="max-w-3xl mx-auto text-center space-y-10">
           <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-800">Get in Touch</h2>
-          <p className="text-lg sm:text-xl text-gray-600">I'd love to hear from you! Please fill out the form below to send me a message.</p>
+          <p className="text-lg sm:text-xl text-gray-600">I&apos;d love to hear from you! Please fill out the form below to send me a message.</p>
           
           <form onSubmit={handleSubmit} className="space-y-6 bg-white p-6 md:p-8 rounded-lg shadow-lg">
             <div>

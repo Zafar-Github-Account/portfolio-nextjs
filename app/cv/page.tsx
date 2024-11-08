@@ -31,7 +31,7 @@ const CV: FC = () => {
         <section className="space-y-4 mb-12">
           <h2 className="text-2xl font-semibold text-gray-800">About Me</h2>
           <p className="text-lg text-gray-700">
-            I'm a passionate Full Stack Developer with expertise in building modern web applications using React, Next.js, TypeScript, and TailwindCSS. I focus on writing clean, maintainable code and building intuitive, user-friendly applications.
+            I&apos;m a passionate Full Stack Developer with expertise in building modern web applications using React, Next.js, TypeScript, and TailwindCSS. I focus on writing clean, maintainable code and building intuitive, user-friendly applications.
           </p>
         </section>
 

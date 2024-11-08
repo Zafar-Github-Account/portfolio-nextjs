@@ -29,20 +29,20 @@ const About: FC = () => {
             About Me
           </h2>
           <p className="text-lg sm:text-xl text-gray-200 leading-relaxed">
-            Hello! I'm a passionate Full Stack Developer with a strong foundation in web
+            Hello! I &apos; m a passionate Full Stack Developer with a strong foundation in web
             development. I specialize in building modern, responsive web applications using
             <strong> React</strong>, <strong>Next.js</strong>, <strong>TypeScript</strong>, and <strong>TailwindCSS</strong>.
             I love writing clean, maintainable code and solving complex problems through programming.
           </p>
           <p className="text-lg sm:text-xl text-gray-200 leading-relaxed">
-            Over the years, I've worked on several projects, collaborating with cross-functional
+            Over the years, I&apos;ve worked on several projects, collaborating with cross-functional
             teams to build intuitive and scalable web applications. I enjoy learning new
             technologies and improving my skills to stay updated with the latest trends in
             software development.
           </p>
           <p className="text-lg sm:text-xl text-gray-200 leading-relaxed">
-            When I'm not coding, I love to explore new technologies, contribute to open-source
-            projects, and write about my experiences. I'm always excited to learn and grow as a
+            When I&apos;m not coding, I love to explore new technologies, contribute to open-source
+            projects, and write about my experiences. I&apos;m always excited to learn and grow as a
             developer.
           </p>
 

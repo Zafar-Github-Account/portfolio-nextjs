@@ -4,8 +4,13 @@ import { FC } from 'react';
 import { Button } from '@/components/ui/button';
 import Navbar from '@/components/ui/navbar';
 import Footer from '@/components/ui/footer';
+import Image from 'next/image';
 
 const Projects: FC = () => {
+  const handleProjectClick = (url: string) => {
+    window.open(url, '_blank');
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-r from-indigo-500 to-blue-400 text-white">
       <Navbar />
@@ -18,9 +23,11 @@ const Projects: FC = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Project 1 */}
           <div className="bg-white shadow-2xl rounded-lg overflow-hidden transform transition-all hover:scale-105 hover:shadow-3xl">
-            <img
+            <Image
               src="/covid.png"
               alt="Covid Website"
+              width={400}
+              height={250}
               className="w-full h-48 sm:h-56 md:h-64 object-cover transition-transform duration-300 hover:scale-110"
             />
             <div className="p-6">
@@ -33,7 +40,7 @@ const Projects: FC = () => {
               <div className="mt-6">
                 <Button
                   className="bg-gradient-to-r from-blue-600 to-blue-500 text-white hover:bg-blue-700 px-4 py-2 w-full rounded-full transform transition-transform hover:scale-105 duration-300"
-                  onClick={() => window.open('https://covid-website-indol.vercel.app')}
+                  onClick={() => handleProjectClick('https://covid-website-indol.vercel.app')}
                 >
                   View Project
                 </Button>
@@ -43,9 +50,11 @@ const Projects: FC = () => {
 
           {/* Project 2 */}
           <div className="bg-white shadow-2xl rounded-lg overflow-hidden transform transition-all hover:scale-105 hover:shadow-3xl">
-            <img
+            <Image
               src="/studen-card.png"
               alt="Student Card"
+              width={400}
+              height={250}
               className="w-full h-48 sm:h-56 md:h-64 object-cover transition-transform duration-300 hover:scale-110"
             />
             <div className="p-6">
@@ -58,7 +67,7 @@ const Projects: FC = () => {
               <div className="mt-6">
                 <Button
                   className="bg-gradient-to-r from-blue-600 to-blue-500 text-white hover:bg-blue-700 px-4 py-2 w-full rounded-full transform transition-transform hover:scale-105 duration-300"
-                  onClick={() => window.open('https://zafaf.vercel.app')}
+                  onClick={() => handleProjectClick('https://zafaf.vercel.app')}
                 >
                   View Project
                 </Button>
@@ -68,9 +77,11 @@ const Projects: FC = () => {
 
           {/* Project 3 */}
           <div className="bg-white shadow-2xl rounded-lg overflow-hidden transform transition-all hover:scale-105 hover:shadow-3xl">
-            <img
+            <Image
               src="/acme.png"
               alt="ACME Website"
+              width={400}
+              height={250}
               className="w-full h-48 sm:h-56 md:h-64 object-cover transition-transform duration-300 hover:scale-110"
             />
             <div className="p-6">
@@ -83,7 +94,7 @@ const Projects: FC = () => {
               <div className="mt-6">
                 <Button
                   className="bg-gradient-to-r from-blue-600 to-blue-500 text-white hover:bg-blue-700 px-4 py-2 w-full rounded-full transform transition-transform hover:scale-105 duration-300"
-                  onClick={() => window.open('https://nextjs-website-official.vercel.app/dashboard')}
+                  onClick={() => handleProjectClick('https://nextjs-website-official.vercel.app/dashboard')}
                 >
                   View Project
                 </Button>
